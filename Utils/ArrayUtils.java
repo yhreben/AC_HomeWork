@@ -32,4 +32,13 @@ public class ArrayUtils {
         return average;
     }
 
+    public static int[] generateArrayWithRangeNumbers(int length, int rangeFrom, int rangeTill){
+        int[] array = new int[length];
+
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (int)(Math.random()*(rangeTill - rangeFrom) + rangeFrom);
+        }
+        return array;
+    }
+
 }
