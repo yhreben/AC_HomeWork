@@ -11,10 +11,40 @@ public class ArrayUtils {
         return array;
     }
 
+    public static int[][] generateArray(int rows, int columns) {
+
+        int[][] matrix = new int[rows][columns];
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                matrix[i][j] = (int) (Math.random() * 100);
+            }
+
+        }
+        return matrix;
+    }
+
     public static void printArray(int[] array){
 
         for (int i = 0; i < array.length; i++) {
             System.out.println("Index = " + i + "; Value = " + array[i]);
+        }
+    }
+
+    public static void printArray(String[] array){
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+    }
+
+    public static void printArray(int [][] multiArray){
+        for (int i = 0; i < multiArray.length; i++) {
+            for (int j = 0; j < multiArray[i].length; j++) {
+                System.out.printf("%02d ", multiArray[i][j]);
+            }
+            System.out.println();
+
         }
     }
 
