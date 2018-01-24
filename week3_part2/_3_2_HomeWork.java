@@ -7,28 +7,26 @@ import Utils.ArrayUtils;
 public class _3_2_HomeWork {
     public static void main(String[] args) {
 
-        int divider = 5;
-        int number = 8;
-        int[][] matrix = ArrayUtils.generateArray(5, 5);
+        boolean[][] matrix = ArrayUtils.generateBooleanArray(5, 5);
 
-        System.out.println("Matrix before changes:");
+        System.out.println("Our matrix:");
         ArrayUtils.printArray(matrix);
 
-        replaceNumber(divider, number, matrix);
+        System.out.println("Changed array:");
+        changeElement(matrix);
     }
 
-    public static void replaceNumber(int divider, int number, int[][] matrix) {
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                if (i == j) {
-                //что такое логическая матрица?
+    public static void changeElement(boolean [][] multiArray){
+        for (int i = 0; i < multiArray.length; i++) {
+            for (int j = 0; j < multiArray[i].length; j++) {
+
+                if(i == j) {
+                    multiArray[i][j] = true;
                 }
+                String delimiter = multiArray[i][j] ? "  " : " ";
+                System.out.printf("%b" + delimiter, multiArray[i][j]);
             }
+            System.out.println();
         }
-
-        System.out.println("Matrix after changes:");
-        ArrayUtils.printArray(matrix);
     }
-
-
 }

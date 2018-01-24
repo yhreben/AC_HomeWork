@@ -24,6 +24,19 @@ public class ArrayUtils {
         return matrix;
     }
 
+    public static boolean[][] generateBooleanArray(int rows, int columns) {
+
+        boolean[][] matrix = new boolean[rows][columns];
+
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                matrix[i][j] = (int) (Math.random() * 2) == 1;
+            }
+
+        }
+        return matrix;
+    }
+
     public static void printArray(int[] array){
 
         for (int i = 0; i < array.length; i++) {
@@ -42,6 +55,17 @@ public class ArrayUtils {
         for (int i = 0; i < multiArray.length; i++) {
             for (int j = 0; j < multiArray[i].length; j++) {
                 System.out.printf("%02d ", multiArray[i][j]);
+            }
+            System.out.println();
+
+        }
+    }
+
+    public static void printArray(boolean [][] multiArray){
+        for (int i = 0; i < multiArray.length; i++) {
+            for (int j = 0; j < multiArray[i].length; j++) {
+                String delimiter = multiArray[i][j] ? "  " : " ";
+                System.out.printf("%b" + delimiter, multiArray[i][j]);
             }
             System.out.println();
 
@@ -69,6 +93,17 @@ public class ArrayUtils {
             array[i] = (int)(Math.random()*(rangeTill - rangeFrom) + rangeFrom);
         }
         return array;
+    }
+
+    private static void shiftArray(int[] array, int shift) {
+        if(shift % array.length == 0) return;
+        for (int j = 0; j < shift; j++) {
+            int temp = array[array.length - 1];
+            for (int i = array.length - 1; i > 0; i--) {
+                array[i] = array[i - 1];
+            }
+            array[0] = temp;
+        }
     }
 
 }
