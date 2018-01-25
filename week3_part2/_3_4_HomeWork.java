@@ -7,12 +7,28 @@ package week3_part2;
 		4 5 6
 */
 
-import Utils.ArrayUtils;
+import utils.ArrayUtils;
+
+import java.util.Scanner;
 
 public class _3_4_HomeWork {
     public static void main(String[] args) {
 
-        int[][] matrix = ArrayUtils.generateArray(5, 5);
+        System.out.println("Enter count of rows");
+
+        Scanner sc = new Scanner(System.in);
+        int rows = sc.nextInt();
+
+        System.out.println("Enter count of columns");
+
+        int columns = sc.nextInt();
+
+        if (rows != columns){
+            System.out.println("The matrix must be square!");
+            return;
+        }
+
+        int[][] matrix = ArrayUtils.generateArray(rows, columns);
 
         System.out.println("Our matrix:");
         ArrayUtils.printArray(matrix);

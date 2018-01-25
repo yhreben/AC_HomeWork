@@ -2,7 +2,7 @@ package week3_part2;
 
 /*3.2. Создать логическую матрицу по следующим критериям, если і равно j, то элементом будет true.*/
 
-import Utils.ArrayUtils;
+import utils.ArrayUtils;
 
 public class _3_2_HomeWork {
     public static void main(String[] args) {

@@ -4,8 +4,6 @@ package week3_part2;
 Удалить из предложения слова которые повторяются.
 */
 
-import Utils.ArrayUtils;
-
 public class _3_8_HomeWork {
     public static void main(String[] args) {
 

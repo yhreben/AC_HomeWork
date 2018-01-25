@@ -1,4 +1,4 @@
-package Utils;
+package utils;
 
 public class ArrayUtils {
     public static int[] generateArray(int size) {

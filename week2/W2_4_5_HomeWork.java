@@ -1,6 +1,6 @@
 package week2;
 
-import Utils.ArrayUtils;
+import utils.ArrayUtils;
 
 import java.util.Scanner;
 

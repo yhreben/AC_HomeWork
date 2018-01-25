@@ -13,17 +13,13 @@ package week3_part1;
    		Иван Васильевич
 */
 
-import Utils.ArrayUtils;
-
-import java.util.Scanner;
-
 public class _4_HomeWork {
     public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //
 //        String sentence = sc.nextLine();
 
-        String sentence = "иван васильевич меняет профессию";
+        String sentence = "иван васильевич меняет и профессию";
 
         System.out.println(sentence);
 
@@ -37,8 +33,14 @@ public class _4_HomeWork {
         String newSentence = "";
 
         for (int i = 0; i < array.length; i++) {
-            array[i] = array[i].substring(0, 1).toUpperCase() + array[i].substring(1);
 
+//            Работает, но лучше по-другому
+//            array[i] = array[i].substring(0, 1).toUpperCase() + array[i].substring(1);
+
+            char[] symbolArray = array[i].toCharArray();
+            symbolArray[0] = Character.toUpperCase(symbolArray[0]);
+
+            array[i] = new String(symbolArray);
             newSentence += array[i] + " ";
         }
 

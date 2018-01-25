@@ -1,6 +1,6 @@
 package week2;
 
-import Utils.ArrayUtils;
+import utils.ArrayUtils;
 
 /*
  * Задать два массива случайными числами от 25 до 75. Определить у какого из массивов больше парных елементов.

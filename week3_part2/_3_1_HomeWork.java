@@ -2,9 +2,7 @@ package week3_part2;
 
 /*3.1. Заменить все числа, которые делятся на 5 без остачи в двухмерной матрице на 8*/
 
-import Utils.ArrayUtils;
-
-import java.util.Scanner;
+import utils.ArrayUtils;
 
 public class _3_1_HomeWork {
     public static void main(String[] args) {

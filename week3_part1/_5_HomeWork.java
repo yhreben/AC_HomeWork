@@ -36,7 +36,7 @@ public class _5_HomeWork {
                 array[i] = invertWord(array[i]);
             } else {
 
-                array[i] = invertEvenLetter(array[i]);
+                array[i] = deleteEvenLetter(array[i]);
             }
 
             newSentence += array[i] + " ";
@@ -45,7 +45,7 @@ public class _5_HomeWork {
         System.out.println(newSentence);
     }
 
-    public static String invertEvenLetter(String word) {
+    public static String deleteEvenLetter(String word) {
 
         String newWord = "";
         for (int i = 0; i < word.length(); i++) {

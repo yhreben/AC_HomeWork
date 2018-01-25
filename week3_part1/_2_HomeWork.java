@@ -24,7 +24,7 @@ public class _2_HomeWork {
         String minLengthWord = array[0];
         String maxLengthWord = array[0];
 
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 1; i < array.length; i++) {
             if(minLengthWord.length() > array[i].length()){
 
                 minLengthWord = array[i];
@@ -36,7 +36,7 @@ public class _2_HomeWork {
 
         }
 
-        System.out.printf("minLengthWord = %s with length = %d;  maxLengthWord = %s with lenth = %d",
+        System.out.printf("minLengthWord = '%s' with length = %d;  maxLengthWord = '%s' with length = %d",
                 minLengthWord, minLengthWord.length(), maxLengthWord, maxLengthWord.length());
     }
 }

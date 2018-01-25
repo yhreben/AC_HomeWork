@@ -1,6 +1,6 @@
 package week2;
 
-import Utils.ArrayUtils;
+import utils.ArrayUtils;
 
 /*
  * Вывести в консоль элементы той половины одномерного массива у которой среднее арифметическое максимальное

@@ -1,6 +1,6 @@
 package week2;
 
-import Utils.ArrayUtils;
+import utils.ArrayUtils;
 
 /*
  * Заданы два массива одинаковой длинны с любыми значениями скопировать данные из первого массива во второй

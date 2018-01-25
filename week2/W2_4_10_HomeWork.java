@@ -1,6 +1,6 @@
 package week2;
 
-import Utils.ArrayUtils;
+import utils.ArrayUtils;
 
 /*
  * Написать метод, который будет обрезать массив по границам start и end

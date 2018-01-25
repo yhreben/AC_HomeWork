@@ -1,6 +1,6 @@
 package week2;
 
-import Utils.ArrayUtils;
+import utils.ArrayUtils;
 
 /*
  * Найти минимальное и максимальное значения в массиве и вывести их на консоль

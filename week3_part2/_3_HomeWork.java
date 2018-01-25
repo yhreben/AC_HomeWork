@@ -2,7 +2,7 @@ package week3_part2;
 
 /*Матрицы генерировать случайными числами и размер матрицы вводит юзер.*/
 
-import Utils.ArrayUtils;
+import utils.ArrayUtils;
 
 import java.util.Scanner;
 
